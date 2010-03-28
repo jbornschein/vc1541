@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware/firmware
+END
+ff.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1159/vhdl/vc1541/controller_firmware/firmware/ff.h
+END
+integer.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1159/vhdl/vc1541/controller_firmware/firmware/integer.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware/firmware/config.h
+END
+uart.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/firmware/uart.c
+END
+mmc.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware/firmware/mmc.c
+END
+util.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1154/vhdl/vc1541/controller_firmware/firmware/util.c
+END
+ks0108_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1176/vhdl/vc1541/controller_firmware/firmware/ks0108_config.h
+END
+uart.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1154/vhdl/vc1541/controller_firmware/firmware/uart.h
+END
+vdisk.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/firmware/vdisk.c
+END
+startup.S
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1106/vhdl/vc1541/controller_firmware/firmware/startup.S
+END
+font_c64.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1179/vhdl/vc1541/controller_firmware/firmware/font_c64.c
+END
+util.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/firmware/util.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware/firmware/main.c
+END
+vdisk.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1160/vhdl/vc1541/controller_firmware/firmware/vdisk.h
+END
+ks0108.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware/firmware/ks0108.c
+END
+monitor.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/firmware/monitor.c
+END
+diskio.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1159/vhdl/vc1541/controller_firmware/firmware/diskio.h
+END
+firmware.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware/firmware/firmware.cfg
+END
+ks0108.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware/firmware/ks0108.h
+END
+ff.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1159/vhdl/vc1541/controller_firmware/firmware/ff.c
+END
+monitor.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1153/vhdl/vc1541/controller_firmware/firmware/monitor.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/firmware/Makefile
+END

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware
+END
+ff.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/ff.h
+END
+integer.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/integer.h
+END
+bootloader.rom
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware/bootloader.rom
+END
+bootloader.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/bootloader.cfg
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware/config.h
+END
+uart.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1184/vhdl/vc1541/controller_firmware/uart.c
+END
+mmc.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/mmc.c
+END
+util.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1106/vhdl/vc1541/controller_firmware/util.c
+END
+ks0108_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/ks0108_config.h
+END
+uart.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1097/vhdl/vc1541/controller_firmware/uart.h
+END
+startup.S
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1097/vhdl/vc1541/controller_firmware/startup.S
+END
+font_c64.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/font_c64.c
+END
+util.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/util.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/main.c
+END
+ks0108.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/ks0108.c
+END
+diskio.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/diskio.h
+END
+ks0108.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/ks0108.h
+END
+ff.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/ff.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1180/vhdl/vc1541/controller_firmware/Makefile
+END
