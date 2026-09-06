@@ -178,7 +178,7 @@ begin
 	VDA <= '1' when Set_Addr_To_r /= "000" else '0';            -- Incorrect !!!!!!!!!!!!
 	VPA <= '1' when Jump(1) = '0' else '0';                             -- Incorrect !!!!!!!!!!!!
 
-	mcode : T65_MCode
+	mcode : entity work.T65_MCode
 		port map(
 			Mode => Mode_r,
 			IR => IR,
@@ -210,7 +210,7 @@ begin
 			SaveP => SaveP,
 			Write => Write);
 
-	alu : T65_ALU
+	alu : entity work.T65_ALU
 		port map(
 			Mode => Mode_r,
 			Op => ALU_Op_r,

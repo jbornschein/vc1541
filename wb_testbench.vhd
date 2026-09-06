@@ -55,13 +55,13 @@ sram: entity work.sram
 -- CLK Gen
 clkproc: process is
 begin
-   clk <= '1', '0' after 250ns;
-   wait for 500ns;
+   clk <= '1', '0' after 250 ns;
+   wait for 500 ns;
 end process;
 
 clk_n <= not clk;
 
-reset <= '1', '0' after 65ns;
+reset <= '1', '0' after 65 ns;
 
 end Behavioral;
 

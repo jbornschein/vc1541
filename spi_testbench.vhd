@@ -58,13 +58,13 @@ spi0: entity work.spi
 	
 	clkproc: process is
 	begin
-		clk <= '1', '0' after 125ns;
-		wait for 125ns;
+		clk <= '1', '0' after 125 ns;
+		wait for 125 ns;
 	end process;
 
-	cs <= '0', '1' after 200ns, '0' after 300ns;
+	cs <= '0', '1' after 200 ns, '0' after 300 ns;
 
-	reset <= '1', '0' after 100ns;
+	reset <= '1', '0' after 100 ns;
 
 
 end Behavioral;

@@ -57,13 +57,13 @@ begin
 
 	clkproc: process is
 	begin
-		clk16 <= '1', '0' after 31.25ns;
-		wait for 62.5ns;
+		clk16 <= '1', '0' after 31.25 ns;
+		wait for 62.5 ns;
 	end process;
 	
-	res_n <= '0', '1' after 1ns;
+	res_n <= '0', '1' after 1 ns;
 
-	bitstream_in <= '1', bitstream_out after 10000ns;
+	bitstream_in <= '1', bitstream_out after 10000 ns;
 
 end Behavioral;
 
