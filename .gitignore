@@ -21,6 +21,9 @@ iseconfig/
 /rom2vhdl/rom2vhdl
 /rom2vhdl/makechartable
 
+# GHDL simulation build output (make sim)
+/sim-work/
+
 # Editor/OS cruft
 *~
 .DS_Store
