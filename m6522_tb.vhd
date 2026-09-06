@@ -51,48 +51,6 @@ end;
 
 architecture SIM of M6522_TB is
 
-  component M6522 is
-    port (
-
-      RS              : in    std_logic_vector(3 downto 0);
-      DATA_IN         : in    std_logic_vector(7 downto 0);
-      DATA_OUT        : out   std_logic_vector(7 downto 0);
-      DATA_OUT_OE_L   : out   std_logic;
-
-      RW_L            : in    std_logic;
-      CS1             : in    std_logic;
-      CS2_L           : in    std_logic;
-
-      IRQ_L           : out   std_logic; -- note, not open drain
-      -- port a
-      CA1_IN          : in    std_logic;
-      CA2_IN          : in    std_logic;
-      CA2_OUT         : out   std_logic;
-      CA2_OUT_OE_L    : out   std_logic;
-
-      PA_IN           : in    std_logic_vector(7 downto 0);
-      PA_OUT          : out   std_logic_vector(7 downto 0);
-      PA_OUT_OE_L     : out   std_logic_vector(7 downto 0);
-
-      -- port b
-      CB1_IN          : in    std_logic;
-      CB1_OUT         : out   std_logic;
-      CB1_OUT_OE_L    : out   std_logic;
-
-      CB2_IN          : in    std_logic;
-      CB2_OUT         : out   std_logic;
-      CB2_OUT_OE_L    : out   std_logic;
-
-      PB_IN           : in    std_logic_vector(7 downto 0);
-      PB_OUT          : out   std_logic_vector(7 downto 0);
-      PB_OUT_OE_L     : out   std_logic_vector(7 downto 0);
-
-      RESET_L         : in    std_logic;
-      P2_H            : in    std_logic; -- high for phase 2 clock  ____----__
-      CLK_4           : in    std_logic  -- 4x system clock (4HZ)   _-_-_-_-_-
-      );
-  end component;
-
   constant CLKPERIOD_4    : time := 250 ns;
 
   signal clk_4            : std_logic;
@@ -201,7 +159,7 @@ begin
   CB2_IN <= sr(8);
   CB1_IN <= cb1_clk;
 
-  via :  M6522
+  via : entity work.M6522
     port map (
 
       RS              => rs,

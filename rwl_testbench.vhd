@@ -83,7 +83,7 @@ vdisk0: entity work.vdisk
 	clkproc: process is
 	begin
 		clk <= '1', '0' after 31 ns;
-		wait for 62ns;
+		wait for 62 ns;
 	end process;
 
 	wb_ack_i <= wb_stb_o;

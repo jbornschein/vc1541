@@ -70,11 +70,11 @@ begin
 
 	clkproc: process is
 	begin
-		clk <= '1', '0' after 125ns;
-		wait for 250ns;
+		clk <= '1', '0' after 125 ns;
+		wait for 250 ns;
 	end process;
 
-	res_n <= '0', '1' after 2000ns;
+	res_n <= '0', '1' after 2000 ns;
 	
 
 end Behavioral;
