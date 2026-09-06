@@ -1,0 +1,26 @@
+# Subversion leftovers (this repo was imported from SVN)
+.svn/
+
+# Xilinx ISE build artifacts
+*.ise_ISE_Backup
+xst/
+_ngo/
+_xmsgs/
+*.bld
+*.lso
+iseconfig/
+
+# cc65/firmware build output
+*.o
+*.s
+*.lbl
+*.map
+*.prg
+
+# Compiled helper tool binaries (build from source instead)
+/rom2vhdl/rom2vhdl
+/rom2vhdl/makechartable
+
+# Editor/OS cruft
+*~
+.DS_Store
