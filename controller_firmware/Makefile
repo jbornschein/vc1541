@@ -7,30 +7,27 @@
 PRG	=	bootloader
 OBJ	=	startup.o ks0108.o main.o uart.o util.o ff.o mmc.o font_c64.o
 
-CC65PATH = ../../../packages/c64/cc65-2.10.1
+# Uses the standard cc65 toolchain (apt package "cc65"), targeting its
+# generic "none" runtime — this project provides its own startup code
+# and linker config rather than a cc65-supported system.
+CC65_SHARE = /usr/share/cc65
 
-#CRT0   	= $(CC65PATH)/libsrc/$(SYS).o
-CLIB	= $(CC65PATH)/libsrc/$(SYS).lib
-CC	= $(CC65PATH)/src/cc65/cc65
-CL	= $(CC65PATH)/src/cl65/cl65
-AS	= $(CC65PATH)/src/ca65/ca65
-LD	= $(CC65PATH)/src/ld65/ld65
+CLIB	= $(CC65_SHARE)/lib/none.lib
+CC	= cc65
+CL	= cl65
+AS	= ca65
+LD	= ld65
 C1541  	= c1541
 
-SYS = tixiv
-
-ASFLAGS = -I$(CC65PATH)/asminc -I$(CC65PATH)/libsrc/tixiv
+ASFLAGS = -I$(CC65_SHARE)/asminc
 
 
 # --------------------------------------------------------------------------
 # Generic rules
 
-
-#	$(CC) -Oirs -T  --codesize 500 -g -t $(SYS) -I $(CC65PATH)/include/ $<
-
 .c.o:
 	@echo $<
-	$(CC) -T -Oirs --codesize 500 -g -I $(CC65PATH)/include/ $<
+	$(CC) -T -Oirs --codesize 500 -g $<
 	$(AS) $(basename $<).s
 
 .S.o:
@@ -48,6 +45,7 @@ $(PRG).prg: 	$(CRT0) $(OBJ) $(CLIB)
 	$(LD) -C bootloader.cfg -m $(basename $@).map -o $@ $^
 	perl -e 'print "\xff" x 8192'>>bootloader.bin
 	dd bs=1024 count=16 if=bootloader.bin of=bootloader.rom
+	$(MAKE) -C ../rom2vhdl
 	../rom2vhdl/rom2vhdl bootloader.rom ctrlrom > ctrlrom.vhd
 
 # --------------------------------------------------------------------------

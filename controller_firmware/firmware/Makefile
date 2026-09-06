@@ -7,30 +7,27 @@
 PRG	=	firmware
 OBJ	=	startup.o main.o uart.o util.o vdisk.o monitor.o ff.o mmc.o ks0108.o font_c64.o
 
-CC65PATH = ../../../../packages/c64/cc65-2.10.1
+# Uses the standard cc65 toolchain (apt package "cc65"), targeting its
+# generic "none" runtime — this project provides its own startup code
+# and linker config rather than a cc65-supported system.
+CC65_SHARE = /usr/share/cc65
 
-#CRT0   	= $(CC65PATH)/libsrc/$(SYS).o
-CLIB	= $(CC65PATH)/libsrc/$(SYS).lib
-CC	= $(CC65PATH)/src/cc65/cc65
-CL	= $(CC65PATH)/src/cl65/cl65
-AS	= $(CC65PATH)/src/ca65/ca65
-LD	= $(CC65PATH)/src/ld65/ld65
+CLIB	= $(CC65_SHARE)/lib/none.lib
+CC	= cc65
+CL	= cl65
+AS	= ca65
+LD	= ld65
 C1541  	= c1541
 
-SYS = tixiv
-
-ASFLAGS = -I$(CC65PATH)/asminc -I$(CC65PATH)/libsrc/tixiv
+ASFLAGS = -I$(CC65_SHARE)/asminc
 
 
 # --------------------------------------------------------------------------
 # Generic rules
 
-
-#	$(CC) -Oirs -T  --codesize 500 -g -t $(SYS) -I $(CC65PATH)/include/ $<
-
 .c.o:
 	@echo $<
-	$(CC) -Oirs -T  --codesize 500 -g -I $(CC65PATH)/include/ $<
+	$(CC) -Oirs -T  --codesize 500 -g $<
 	$(AS) $(basename $<).s
 
 .S.o:
